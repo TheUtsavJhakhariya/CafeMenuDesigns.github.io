@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  height: calc(13*1.2rem);
+  padding: 1.2rem 1.2rem 0;
+  position:relative;
+}
+.card_image:before,
+.card_image:after{
+  content: "";
+  position: absolute;
+  width: 20px;
+  left: 60%;
+  top: 0;
+  height: 45px;
+  background: #a7a7a7b8;
+  transform: rotate(45deg);
+}
+.card_image:after{
+  transform: rotate(-45deg);
+  top:auto;
+  bottom:-22px;
+  left:40%;
+}
+.card_image img {
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+
+.cards_item {
+  filter:drop-shadow(0 0 5px rgba(0, 0, 0, 0.25));
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  padding-left: 30px;
+  background: repeating-linear-gradient(#0000 0 calc(1.2rem - 1px),#82b1cf 0 1.2rem) right bottom /100% 100%,linear-gradient(red 0 0) 30px 0/2px 100% #fff;
+  background-repeat: no-repeat;
+  line-height: 1.2rem;
+  -webkit-mask:radial-gradient(circle .8rem at 2px 50%,#0000 98%,#000)0 0/100% 2.4rem;
+}
+
+.card_content {
+  padding: 1.2rem;
+}
+
+h2.card_title,p {
+  margin: 1.2rem 0;
+}
+h2.card_title {
+    font-size: 1.3em;
+}
+body {
+  font-family:monospace;
+  background:#eee;
+}
+
+html {
+  font-size:15px;
+}
+    </style>
+</head>
+<body>
+    <div class="main">
+        <ul class="cards">
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://www.healthshots.com/wp-content/uploads/2019/12/shutterstock_365116205-1.jpg" alt="mixed vegetable salad in a mason jar. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Veg Grilled Sandwich &#x2022; $50</h2>
+                <div class="card_text">
+                  <p>A veg sandwich is a delicious and nutritious meal that is easy to prepare and customize to your taste preferences. To make a homemade veg sandwich, start with your favorite bread, such as whole wheat or sourdough.</p><p>Then, layer on a variety of fresh vegetables, such as lettuce, tomatoes, cucumbers, and bell peppers. For added protein, you can also include a vegetarian protein source, such as hummus, avocado, or tofu.</p>
+                  <p>To add flavor, you can also include condiments such as mustard, mayonnaise, or pesto. With endless possibilities, a homemade veg sandwich is a healthy and satisfying meal that can be enjoyed any time of the day.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+      
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2019/10/veg-roll-frankie.jpg" alt="a Reuben sandwich on wax paper. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Veg Cheese Frankie &#x2022; $30</h2>
+                <div class="card_text">
+                  <p>A veg frankie is a delicious and popular Indian street food that can be easily made at home. The frankie consists of a tortilla-like wrap that is filled with a variety of vegetables and spices. </p><p>To make a homemade veg frankie, start by preparing the filling, which can include ingredients such as potatoes, onions, bell peppers, carrots, and paneer (an Indian cheese). Sauté the vegetables with spices like cumin, coriander, and turmeric until they are soft and fragrant.</p>
+                  <p>Then, heat a tortilla or wrap and place the filling inside, along with chutneys, such as mint chutney or tamarind chutney, and toppings such as cilantro and diced onions. Roll up the wrap and enjoy! The veg frankie is a tasty and filling meal that can be enjoyed as a snack or a light lunch.</p>
+                  
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cards_item">
+            <div class="card">
+              <div class="card_image"><img src="https://nbtrangmanchclub.com/wp-content/uploads/2019/08/Feature-Images02.png" alt="A side view of a plate of figs and berries. "></div>
+              <div class="card_content">
+                <h2 class="card_title">Veg Siziling Barbeque</h2>
+                <div class="card_text">
+                  <p>A veg barbecue is a delicious and healthy alternative to traditional meat-based barbecues. To make a homemade veg barbecue, start by selecting a variety of vegetables that are suitable for grilling, such as bell peppers, zucchini, eggplant, corn, and mushrooms.</p>
+                  <p>Marinate the vegetables in your preferred sauce or spices, such as a blend of olive oil, garlic, and herbs. Then, grill the vegetables until they are charred and tender. Serve the grilled vegetables with a variety of dips and sauces, such as hummus, tzatziki, or chimichurri, for added flavor.</p>
+                  <p>A homemade veg barbecue is a great way to enjoy the summer weather while also incorporating more plant-based foods into your diet.</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+</body>
+</html>
